@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h3>sum numbers nd display in other textbox</h3>
+	<input type="number" name="textbox1" id="p1">
+	<input type="number" name="textbox2" id="p2">
+	<input type="submit" value="submit" onclick="myfunction()">
+	<br>
+	<br>
+	<input type="number" name="textbox3" id="p3">
+	<p id="p4"></p>
+	<script type="text/javascript">
+		function myfunction(){
+			var x,y,z;
+			x=parseInt(document.getElementById('p1').value);
+			y=parseInt(document.getElementById('p2').value);
+			// document.getElementById('p4').innerHTML = typeof "x";
+		
+
+			z=x + y;
+			document.getElementById('p3').value=z;
+		}
+	</script>
+
+</body>
+</html>
