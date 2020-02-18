@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Copy text to other textbox</title>
+</head>
+<body>
+	<input type="text" name="textbox1" id="p1">
+	<input type="text" name="textbox2" id="p2">
+	<input type="submit" value="submit" onclick="myfunction()">
+	<script type="text/javascript">
+		function myfunction(){
+			var x;
+			x=document.getElementById('p1').value;
+			document.getElementById('p2').value=x;
+		}
+	</script>
+
+</body>
+</html>
