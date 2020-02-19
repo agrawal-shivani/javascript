@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h3>Add in dropdown button</h3>
+	<input type="text" name="input" id="01">
+	<button id="b1" onclick="myfunction()">add</button>
+	<br><br>
+	<select name="select" id="s1">
+		<option></option>
+	</select>
+	<button id="b2" onclick="show()">submit</button>
+	<script type="text/javascript">
+		function myfunction(){
+        var x,i;
+        i=0;
+		x=document.getElementById("01").value;
+        i=i+1;
+		document.getElementById("s1").innerHTML +="<option value="+i+" selected='selected'>"+x+"</option>";
+	}
+	</script>
+
+
+</body>
+</html>
